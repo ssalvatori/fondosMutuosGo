@@ -9,5 +9,6 @@ import (
 func main() {
 	fmt.Printf("Fondos Mutuos")
 	fmt.Println("Starting ** ", time.Now().String())
-	crawler.NewCrawler()
+	c := crawler.NewCrawler()
+	c.Run()
 }
